@@ -57,7 +57,7 @@ export async function getSystemCredentials(): Promise<Credentials> {
 export interface User {
     id: string;
     permissions: string[];
-    services: Map<string, any>;
+    services: { [key: string]: any };
 }
 
 export class AuthService {
